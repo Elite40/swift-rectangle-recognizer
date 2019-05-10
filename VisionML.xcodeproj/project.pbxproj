@@ -12,6 +12,9 @@
 		526DC0B11F7BBF6C00A32A20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526DC0AF1F7BBF6C00A32A20 /* Main.storyboard */; };
 		526DC0B31F7BBF6C00A32A20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 526DC0B21F7BBF6C00A32A20 /* Assets.xcassets */; };
 		526DC0B61F7BBF6C00A32A20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526DC0B41F7BBF6C00A32A20 /* LaunchScreen.storyboard */; };
+		526DC0BE1F7BBFB900A32A20 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526DC0BD1F7BBFB900A32A20 /* PreviewView.swift */; };
+		52EC531A1F7BC8ED0022A2BA /* ViewController+Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EC53191F7BC8ED0022A2BA /* ViewController+Camera.swift */; };
+		52EC531C1F7BECDF0022A2BA /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 52EC531B1F7BECBC0022A2BA /* Inceptionv3.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		526DC0B21F7BBF6C00A32A20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		526DC0B51F7BBF6C00A32A20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		526DC0B71F7BBF6C00A32A20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		526DC0BD1F7BBFB900A32A20 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		52EC53191F7BC8ED0022A2BA /* ViewController+Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Camera.swift"; sourceTree = "<group>"; };
+		52EC531B1F7BECBC0022A2BA /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +60,11 @@
 		526DC0AA1F7BBF6C00A32A20 /* VisionML */ = {
 			isa = PBXGroup;
 			children = (
+				52EC531B1F7BECBC0022A2BA /* Inceptionv3.mlmodel */,
 				526DC0AB1F7BBF6C00A32A20 /* AppDelegate.swift */,
 				526DC0AD1F7BBF6C00A32A20 /* ViewController.swift */,
+				52EC53191F7BC8ED0022A2BA /* ViewController+Camera.swift */,
+				526DC0BD1F7BBFB900A32A20 /* PreviewView.swift */,
 				526DC0AF1F7BBF6C00A32A20 /* Main.storyboard */,
 				526DC0B21F7BBF6C00A32A20 /* Assets.xcassets */,
 				526DC0B41F7BBF6C00A32A20 /* LaunchScreen.storyboard */,
@@ -136,8 +145,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52EC531C1F7BECDF0022A2BA /* Inceptionv3.mlmodel in Sources */,
+				52EC531A1F7BC8ED0022A2BA /* ViewController+Camera.swift in Sources */,
 				526DC0AE1F7BBF6C00A32A20 /* ViewController.swift in Sources */,
 				526DC0AC1F7BBF6C00A32A20 /* AppDelegate.swift in Sources */,
+				526DC0BE1F7BBFB900A32A20 /* PreviewView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +287,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8B4N749BNX;
 				INFOPLIST_FILE = VisionML/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.brianadvent.VisionML;
@@ -289,6 +302,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8B4N749BNX;
 				INFOPLIST_FILE = VisionML/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.brianadvent.VisionML;
